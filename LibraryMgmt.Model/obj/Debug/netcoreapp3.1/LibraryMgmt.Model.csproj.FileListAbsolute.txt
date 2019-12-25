@@ -1,0 +1,7 @@
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Model\bin\Debug\netcoreapp3.1\LibraryMgmt.Model.deps.json
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Model\bin\Debug\netcoreapp3.1\LibraryMgmt.Model.dll
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Model\bin\Debug\netcoreapp3.1\LibraryMgmt.Model.pdb
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Model\obj\Debug\netcoreapp3.1\LibraryMgmt.Model.AssemblyInfoInputs.cache
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Model\obj\Debug\netcoreapp3.1\LibraryMgmt.Model.AssemblyInfo.cs
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Model\obj\Debug\netcoreapp3.1\LibraryMgmt.Model.dll
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Model\obj\Debug\netcoreapp3.1\LibraryMgmt.Model.pdb

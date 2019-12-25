@@ -1,0 +1,11 @@
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\bin\Debug\netcoreapp3.1\LibraryMgmt.Data.Contracts.deps.json
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\bin\Debug\netcoreapp3.1\LibraryMgmt.Data.Contracts.dll
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\bin\Debug\netcoreapp3.1\LibraryMgmt.Data.Contracts.pdb
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\bin\Debug\netcoreapp3.1\LibraryMgmt.Model.dll
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\bin\Debug\netcoreapp3.1\LibraryMgmt.Model.pdb
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\obj\Debug\netcoreapp3.1\LibraryMgmt.Data.Contracts.csprojAssemblyReference.cache
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\obj\Debug\netcoreapp3.1\LibraryMgmt.Data.Contracts.AssemblyInfoInputs.cache
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\obj\Debug\netcoreapp3.1\LibraryMgmt.Data.Contracts.AssemblyInfo.cs
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\obj\Debug\netcoreapp3.1\LibraryMgmt.Data.Contracts.csproj.CopyComplete
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\obj\Debug\netcoreapp3.1\LibraryMgmt.Data.Contracts.dll
+C:\Users\Ashwin\Projects\LibraryMgmt\LibraryMgmt.Data.Contracts\obj\Debug\netcoreapp3.1\LibraryMgmt.Data.Contracts.pdb

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LibraryMgmt.Data.Contracts/1.0.0": {
+        "dependencies": {
+          "LibraryMgmt.Model": "1.0.0"
+        },
+        "runtime": {
+          "LibraryMgmt.Data.Contracts.dll": {}
+        }
+      },
+      "LibraryMgmt.Model/1.0.0": {
+        "runtime": {
+          "LibraryMgmt.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LibraryMgmt.Data.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibraryMgmt.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
