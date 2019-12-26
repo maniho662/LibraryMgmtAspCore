@@ -1,0 +1,36 @@
+<html>
+    <head>Book Add / Edit</head>
+    <body>
+        <h1>{{ isEdit === true ? "Edit Book" : "Add Book" }}</h1>
+        <form [formGroup]="bookDet">
+            <table>
+                <tr *ngIf="isEdit" >
+                    <td>Id</td>
+                    <td><input type="text" value="0" formControlName="id" /></td>
+                </tr>
+                <tr>
+                    <td>Book Name</td>
+                    <td><input type="text" value="" formControlName="bookName" /></td>
+                </tr>
+                <tr>
+                    <td>Author Name</td>
+                    <td><input type="text" value="" formControlName="authorName" /></td>
+                </tr>
+                <tr>
+                    <td>Book Category</td>
+                    <td><input type="text" value="" formControlName="bookCategory" /></td>
+                </tr>
+                <tr>
+                    <td>Edition</td>
+                    <td><input type="text" value="" formControlName="edition" /></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="text" value="" formControlName="price" /></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit" (click)="onSubmit();" />
+            <input type="reset" value="Reset" (click)="onReset();" />
+        </form>
+    </body>
+</html>
