@@ -12,8 +12,9 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { BookComponent } from './book/book.component';
 import { BookListComponent } from './book-list/book-list.component';
 
-const routes: Routes = [{
-  path: 'addbook:/id',
+const routes: Routes = [
+{
+  path: 'addbook/:id',
   component: BookComponent
 },
 {

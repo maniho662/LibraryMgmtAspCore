@@ -26,7 +26,7 @@ namespace LibraryMgmt.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<LibraryMgmtDbContext>(opt => opt.UseInMemoryDatabase(databaseName: "LibraryMgmt"));
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddNewtonsoftJson();
             services.AddTransient<InitialData>();
             services.AddScoped<RepositoryFactories, RepositoryFactories>();
             services.AddScoped<IRepositoryProvider, RepositoryProvider>();

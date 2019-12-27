@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ServicesService } from '../services.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { BookData } from '../_model';
 
 @Component({
   selector: 'app-book',
@@ -21,22 +22,22 @@ export class BookComponent implements OnInit {
   ngOnInit() {
     this.builForm();
 
-    let id = this.route.snapshot.queryParams["id"];
-
+    let id = this.route.snapshot.params["id"];
+    console.log(id);
     if (id != null) {
       this.isEdit = true;
 
       this.ss.GetBookById(id).subscribe(
         (data) => {
-          console.log(data);          
-         
-          this.dt.id = data.id;
-          this.dt.bookName = data.bookName;
-          this.dt.authorName = data.authorName;
-          this.dt.bookCategory = data.bookCategory;
-          this.dt.edition = data.edition;
-          this.dt.price = data.price;
-         
+          this.dt = new BookData();
+          Object.assign(this.dt, data[0]); 
+          //this.dt.id = data[0].id;
+          //this.dt.bookName = data[0].bookName;
+          //this.dt.authorName = data[0].authorName;
+          //this.dt.bookCategory = data[0].bookCategory;
+          //this.dt.edition = data[0].edition;
+          //this.dt.price = data[0].price;
+          //console.log(this.dt);
           this.bookDet.setValue(this.dt);          
         },
         (error) => {
@@ -53,16 +54,15 @@ export class BookComponent implements OnInit {
       authorName: ['', [Validators.required]],
       bookCategory: [''],
       edition: ['', [Validators.required]],
-      price: [0, [Validators.pattern('\\d+\.?\\d{0,2}?')]],
+      price: ['', [Validators.required]],
     });
   }
 
   onSubmit(): any {
-    // console.log(this.studentDet.value);
-    if (this.bookDet.controls['id'].value == '0') {
-      console.log(this.bookDet.value);
-      Object.assign(this.dt, this.bookDet.value);
-      console.log('dt value'+this.dt);
+    this.dt = new BookData();
+    if (this.bookDet.controls['id'].value == '0') {      
+      Object.assign(this.dt, this.bookDet.value);      
+      console.log(this.dt);
       this.ss.AddBook(this.dt).subscribe(
         (data) => {
           alert('Saved Successfully');

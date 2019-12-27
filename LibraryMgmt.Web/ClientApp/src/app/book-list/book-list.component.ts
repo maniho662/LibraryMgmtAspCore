@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicesService } from '../services.service';
 import { Router } from '@angular/router';
+import { BookData } from '../_model';
 
 @Component({
   selector: 'app-book-list',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class BookListComponent implements OnInit {
 
-  bookList: BookData;
+  public bookList: BookData;
   constructor(private router: Router, private ss: ServicesService) { }
 
   ngOnInit() {
@@ -39,8 +40,8 @@ export class BookListComponent implements OnInit {
     );
   }
 
-  editBook(id: number): any {
-    this.router.navigate(['/addbook'], { queryParams: { id: id } });
+  editBook(id: number): any {    
+    this.router.navigate(['/addbook/' + id]);
   }
 
 }
